@@ -1,0 +1,136 @@
+.carousel {
+  display: flex;
+  justify-content: space-between;
+}
+.carousel .swiper {
+  position: relative;
+  width: 600px;
+  height: 310px;
+  overflow: hidden;
+}
+.carousel .swiper .swiper-img {
+  width: 600px;
+  height: 310px;
+  position: absolute;
+  opacity: 0;
+  transition: all 1.5s;
+}
+.carousel .swiper .swiper-img img {
+  width: 100%;
+}
+.carousel .swiper .swiper-img-show {
+  width: 600px;
+  height: 310px;
+  position: absolute;
+  opacity: 1;
+}
+.carousel .swiper .swiper-img-show img {
+  width: 100%;
+}
+.carousel .swiper .swiper-left-button {
+  position: absolute;
+  text-decoration: none;
+  height: 69px;
+  width: 41px;
+  background-color: transparent;
+  line-height: 68px;
+  text-align: center;
+  font-size: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+  opacity: 0.5;
+}
+.carousel .swiper .swiper-left-button:hover {
+  color: #fff;
+  opacity: 1;
+}
+.carousel .swiper .swiper-right-button {
+  position: absolute;
+  text-decoration: none;
+  height: 69px;
+  width: 41px;
+  background-color: transparent;
+  line-height: 68px;
+  text-align: center;
+  font-size: 50px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  color: #ccc;
+  opacity: 0.5;
+}
+.carousel .swiper .swiper-right-button:hover {
+  color: #fff;
+  opacity: 1;
+}
+.carousel .swiper .swiper-pagination ul {
+  position: absolute;
+  list-style: none;
+  right: 50px;
+  bottom: 30px;
+}
+.carousel .swiper .swiper-pagination ul .swiper-dot {
+  float: left;
+  background-color: white;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.carousel .swiper .swiper-pagination ul .swiper-dot-show {
+  background-color: #ee420f;
+  float: left;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.carousel .headline {
+  width: 280px;
+  height: 310px;
+}
+.carousel .headline ul {
+  height: 310px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.carousel .headline ul li {
+  height: 150px;
+}
+.carousel .headline ul li a {
+  display: block;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+.carousel .headline ul li a:hover img {
+  transform: scale(1.2);
+}
+.carousel .headline ul li a img {
+  width: 280px;
+  height: 150px;
+  transition: all 1s;
+}
+.carousel .headline ul li a span {
+  position: absolute;
+  bottom: 0;
+  top: 30%;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 5px;
+  padding: 0 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-height: 24px;
+  height: 48px;
+}

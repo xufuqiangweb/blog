@@ -1,0 +1,127 @@
+main {
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 5;
+}
+main .inner {
+  display: flex;
+  justify-content: space-between;
+}
+main .inner .column {
+  width: 900px;
+}
+main .inner .column .article-header {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+}
+main .inner .column .article-header h2 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 50px;
+}
+main .inner .column .article-content {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+main .inner .column .article-content h1 {
+  font-size: 24px;
+  line-height: 40px;
+}
+main .inner .column .article-content h2 {
+  font-size: 22px;
+  line-height: 36px;
+}
+main .inner .column .article-content h3 {
+  font-size: 20px;
+  line-height: 32px;
+}
+main .inner .column .article-content h4 {
+  font-size: 18px;
+  line-height: 28px;
+}
+main .inner .column .article-content p {
+  line-height: 24px;
+  margin: 10px 0;
+}
+main .inner .column .article-content ul li {
+  line-height: 24px;
+  margin: 10px 0;
+}
+main .inner .column .article-content pre {
+  box-sizing: border-box;
+  background-color: #000;
+  padding: 20px;
+}
+main .inner .column .article-content pre code {
+  color: #ccc;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+main .inner .column .comment {
+  width: 900px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+main .inner .column .comment .comment-content {
+  display: flex;
+  flex-direction: column;
+}
+main .inner .column .comment .comment-content .user {
+  width: 200px;
+  outline: none;
+  font-size: 16px;
+  line-height: 28px;
+  box-sizing: border-box;
+  padding-left: 5px;
+}
+main .inner .column .comment .comment-content textarea {
+  min-width: 860px;
+  max-width: 860px;
+  outline: none;
+  font-size: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px;
+}
+main .inner .column .comment .comment-content button {
+  align-self: flex-end;
+}
+main .inner .column .comment .comment-list {
+  width: 860px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+main .inner .column .comment .comment-list .comment-num {
+  line-height: 30px;
+  border-bottom: 1px dotted #ddd;
+  padding: 0 12px;
+}
+main .inner .column .comment .comment-list .no-comments {
+  padding: 0 12px;
+  line-height: 50px;
+}
+main .inner .column .comment .comment-list ul {
+  padding: 0 12px;
+}
+main .inner .column .comment .comment-list ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+main .inner .column .comment .comment-list ul li h4 {
+  line-height: 24px;
+}
+main .inner .column .comment .comment-list ul li p {
+  line-height: 24px;
+}
+main .inner .column .comment .comment-list ul li span {
+  display: block;
+  font-size: 16px;
+  color: #999;
+}
+main .inner .detail-sidebar .recommend {
+  margin: 0 !important;
+}

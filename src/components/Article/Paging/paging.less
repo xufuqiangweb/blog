@@ -1,0 +1,48 @@
+// 分页
+.paging {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .g-page {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 10px 0;
+        font-size: 0;
+
+        button {
+            display: inline-block;
+            vertical-align: middle;
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            margin: 0 5px;
+            background-color: #fff;
+            color: #333;
+            font-size: 12px;
+            border: 1px solid #e2e2e2;
+            cursor: pointer;
+
+            &:nth-of-type(1) {
+                width: 50px;
+            }
+
+            &:nth-last-of-type(1) {
+                width: 50px;
+            }
+
+            &:hover {
+                color: #009688;
+            }
+        }
+
+        .activePage {
+            background-color: #009688;
+            color: #fff;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}

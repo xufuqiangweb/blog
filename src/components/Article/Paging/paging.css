@@ -1,0 +1,40 @@
+.paging {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.paging .g-page {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 0;
+  font-size: 0;
+}
+.paging .g-page button {
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 12px;
+  border: 1px solid #e2e2e2;
+  cursor: pointer;
+}
+.paging .g-page button:nth-of-type(1) {
+  width: 50px;
+}
+.paging .g-page button:nth-last-of-type(1) {
+  width: 50px;
+}
+.paging .g-page button:hover {
+  color: #009688;
+}
+.paging .g-page .activePage {
+  background-color: #009688;
+  color: #fff;
+}
+.paging .g-page .activePage:hover {
+  color: #fff;
+}

@@ -1,0 +1,164 @@
+// 轮播图
+.carousel {
+    display: flex;
+    justify-content: space-between;
+
+    // 轮播
+    .swiper {
+        position: relative;
+        width: 600px;
+        height: 310px;
+        overflow: hidden;
+
+        .swiper-img {
+            width: 600px;
+            height: 310px;
+            position: absolute;
+            opacity: 0;
+            transition: all 1.5s;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .swiper-img-show {
+            width: 600px;
+            height: 310px;
+            position: absolute;
+            opacity: 1;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .swiper-left-button {
+            position: absolute;
+            text-decoration: none;
+            height: 69px;
+            width: 41px;
+            background-color: transparent;
+            line-height: 68px;
+            text-align: center;
+            font-size: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #ccc;
+            opacity: 0.5;
+        }
+
+        .swiper-left-button:hover {
+            // background-color: #000050;
+            color: #fff;
+            opacity: 1;
+        }
+
+
+        .swiper-right-button {
+            position: absolute;
+            text-decoration: none;
+            height: 69px;
+            width: 41px;
+            background-color: transparent;
+            line-height: 68px;
+            text-align: center;
+            font-size: 50px;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            color: #ccc;
+            opacity: 0.5;
+
+        }
+
+        .swiper-right-button:hover {
+            // background-color: #000050;
+            color: #fff;
+            opacity: 1;
+        }
+
+        .swiper-pagination {
+            ul {
+                position: absolute;
+                list-style: none;
+                right: 50px;
+                bottom: 30px;
+
+                .swiper-dot {
+                    float: left;
+                    background-color: white;
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 50%;
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+
+                .swiper-dot-show {
+                    background-color: #ee420f;
+                    float: left;
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 50%;
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    // banner
+    .headline {
+        width: 280px;
+        height: 310px;
+
+        ul {
+            height: 310px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+
+            li {
+                height: 150px;
+
+                a {
+                    display: block;
+                    height: 150px;
+                    position: relative;
+                    overflow: hidden;
+
+                    &:hover img {
+                        transform: scale(1.2);
+                    }
+
+                    img {
+                        width: 280px;
+                        height: 150px;
+                        transition: all 1s;
+                    }
+
+                    span {
+                        position: absolute;
+                        bottom: 0;
+                        top: 30%;
+                        left: 0;
+                        right: 0;
+                        color: #FFF;
+                        text-align: center;
+                        font-size: 16px;
+                        margin-top: 5px;
+                        padding: 0 40px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        -webkit-box-orient: vertical;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        line-height: 24px;
+                        height: 48px;
+                    }
+                }
+            }
+        }
+    }
+}

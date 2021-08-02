@@ -1,0 +1,70 @@
+header {
+  background-image: linear-gradient(#fff, #d4d7db);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  position: fixed;
+  z-index: 7;
+}
+header nav {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(#fff, #d4d7db);
+}
+header nav .logo img {
+  height: 70px;
+}
+header nav .nav {
+  display: flex;
+}
+header nav .nav li a {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  line-height: 70px;
+  position: relative;
+  z-index: 5;
+}
+header nav .nav li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 65px;
+  width: 120px;
+  height: 70px;
+  transition: ease-in-out 0.2s all;
+  z-index: -1;
+}
+header nav .nav li .selected:after {
+  bottom: 0;
+}
+header nav .nav li .selected {
+  color: #fff;
+}
+header nav .nav li:hover a:after {
+  bottom: 0;
+}
+header nav .nav li:hover a {
+  color: #fff;
+}
+header nav .nav li:nth-of-type(1) a:after {
+  background-color: #f17559;
+}
+header nav .nav li:nth-of-type(2) a:after {
+  background-color: #f2b25b;
+}
+header nav .nav li:nth-of-type(3) a:after {
+  background-color: #f0dc59;
+}
+header nav .nav li:nth-of-type(4) a:after {
+  background-color: #bbf15b;
+}
+header nav .nav li:nth-of-type(5) a:after {
+  background-color: #59e5f2;
+}
+header nav .nav li:nth-of-type(6) a:after {
+  background-color: #5b9ff2;
+}
+header nav .nav li:nth-of-type(7) a:after {
+  background-color: #6c59f1;
+}

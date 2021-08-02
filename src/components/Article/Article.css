@@ -1,0 +1,99 @@
+.article {
+  width: 900px;
+  height: 231px;
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.article:hover .article-img img {
+  transform: scale(1.2);
+}
+.article .article-img {
+  display: block;
+  box-sizing: border-box;
+  width: 260px;
+  height: 190px;
+  margin: 20px;
+  overflow: hidden;
+}
+.article .article-img img {
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+}
+.article .article-content {
+  box-sizing: border-box;
+  width: 600px;
+  height: 230px;
+  padding: 20px 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.article .article-content .article-title {
+  line-height: 28px;
+}
+.article .article-content .article-title a {
+  font-size: 20px;
+  width: 560px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.article .article-content .article-title a span {
+  display: inline-block;
+  background: #06aaff;
+  color: #fff;
+  padding: 0 6px;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+.article .article-content .article-title a:hover {
+  color: #06aaff;
+}
+.article .article-content .article-paragraph {
+  text-indent: 36px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  color: #aaa;
+  height: 98px;
+}
+.article .article-content .article-info {
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+}
+.article .article-content .article-info .info-data span {
+  font-size: 14px;
+  color: #a8a8a8;
+  margin-right: 12px;
+}
+.article .article-content .article-info .info-data span i {
+  color: #a8a8a8;
+  margin-right: 3px;
+}
+.article .article-content .article-info .article-read {
+  border: none;
+  outline: none;
+  margin-top: 2px;
+  height: 26px;
+}
+.article .article-content .article-info .article-read a {
+  color: #098fff;
+}
+.no-option {
+  padding: 50px;
+}
+.no-option p {
+  font-size: 22px;
+  text-align: center;
+}

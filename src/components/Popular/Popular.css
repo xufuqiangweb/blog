@@ -1,0 +1,20 @@
+.popular .tag-list {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.popular .tag-list li {
+  margin: 5px 5px;
+}
+.popular .tag-list li button {
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+.popular .tag-list li button:active {
+  background-color: #fff;
+}
