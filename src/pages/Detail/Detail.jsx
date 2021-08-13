@@ -6,7 +6,7 @@ import Recommend from '../../components/Recommend/Recommend'
 import Rank from '../../components/Rank/Rank'
 import Footer from '../../components/Footer/Footer'
 
-import { getHome } from '../../Api/Api'
+import { getHome } from '../../api/Api'
 import ReactMarkdown from 'react-markdown'
 
 import qs from 'querystring'

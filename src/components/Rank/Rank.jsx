@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 
-import { getHome } from '../../Api/Api'
+import { getHome } from '../../api/Api'
 
 // 引入connect用于连接UI组件与redux
 import { connect } from 'react-redux'

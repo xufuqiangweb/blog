@@ -1,6 +1,6 @@
 // 热门标签
 import React, { Component } from 'react'
-import { getHome } from '../../Api/Api'
+import { getHome } from '../../api/Api'
 
 import './Popular.css'
 import { connect } from 'react-redux'

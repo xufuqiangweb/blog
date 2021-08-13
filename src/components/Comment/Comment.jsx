@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 
-import { getHome } from '../../Api/Api'
+import { getHome } from '../../api/Api'
 
 import { connect } from 'react-redux';
 import { detail, comment } from '../../redux/actions'
